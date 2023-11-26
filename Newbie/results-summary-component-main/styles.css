@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Outfit&display=swap');
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 375px;
+    height: 375px;
+    background:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: 3px 13px 34px -10px rgba(0,0,0,0.57);
+}
+.result h2{
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+.circle{
+    width: 20vh;
+    height:20vh;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+.circle p {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.circle span{
+    margin-bottom: 30px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+.result-desc h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+}
+.result-desc{
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+.summary{
+    width: 375px;
+    height: 375px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 3px 13px 34px -10px rgba(0,0,0,0.57);
+}
+.summary p{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 4vh;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.summary i{
+    margin-right: 2vh;
+}
+.summary span{
+    margin-left: 25vh;
+}
+.reaction p{
+    background: linear-gradient(90deg,hsla(0, 100%, 67%,.4),hsl(0, 0%, 100%));
+    color: hsl(0, 100%, 67%);
+    font-weight: 500;
+}
+.memeory p{
+    background: linear-gradient(90deg,hsla(39, 100%, 56%,.4),hsl(0, 0%, 100%));
+    color: hsl(39, 100%, 56%);
+    font-weight: 500;
+}
+.verbal p{
+    background: linear-gradient(90deg,hsla(166, 100%, 37%,.4),hsl(0, 0%, 100%));
+    color: hsl(166, 100%, 37%);
+    font-weight: 500;
+}
+.visual p{
+    background: linear-gradient(90deg,hsla(234, 85%, 45%,.4),hsl(0, 0%, 100%));
+    color: hsl(234, 85%, 45%);
+    font-weight: 500;
+}
+.reaction span{
+    color: black;
+}
+.memeory span{
+    color: black;
+}
+.verbal span{
+    color: black;
+    margin-left: 26.8vh;
+}
+.visual span{
+    color: black;
+    margin-left: 26.8vh;
+}
+.continue{
+    background: hsl(224, 30%, 27%);
+    color: #fff;
+    border-radius:20px;
+    height: 5vh;
+    width: 30vh;
+}
