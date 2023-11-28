@@ -1,125 +1,238 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Outfit&display=swap');
-body{
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Hanken Grotesk', sans-serif;
+    overflow: hidden;
 }
-.container{
+body{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    height: 112vh;
+}
+.main-box{
+    max-width: 700px;
     width: 100%;
-    height: 95vh;
+    background-color: #fff;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
 }
-.result{
+.first-box{
+    padding-top: 20px;
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
+    border-radius:30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    width: 375px;
-    height: 375px;
-    background:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
-    text-align: center;
-    border-radius: 20px;
-    font-size: 18px;
-    box-shadow: 3px 13px 34px -10px rgba(0,0,0,0.57);
+    align-items: center;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
 }
-.result h2{
+.result-heading{
+    font-size:1.5rem;
     color: hsl(241, 100%, 89%);
+    margin: 10px;
     font-weight: 700;
 }
 .circle{
-    width: 20vh;
-    height:20vh;
+    margin: 20px;
     border-radius: 50%;
+    width: 140px;
+    height: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
 }
-.circle p {
+.circle p{
     font-size: 3.5rem;
-    color: #fff;
-    margin-bottom: 0;
-    font-weight: 700;
+    margin-bottom: -15px;
+    color: hsl(0, 0%, 100%);
 }
 .circle span{
-    margin-bottom: 30px;
     color: hsl(241, 100%, 89%);
-    font-weight: 700;
 }
-.result-desc h2{
+.great{
+    margin: 10px;
     color: hsl(0, 0%, 100%);
-    font-weight: 800;
+    font-size: 1.8rem;
 }
-.result-desc{
-    color: hsl(241, 100%, 89%);
-    font-weight: 500;
+.paragraph{
+    margin: 10px;
+    color: hsl(241, 100%, 89%);  
+    text-align: center; 
 }
-.summary{
-    width: 375px;
-    height: 375px;
-    text-align: left;
+.second-box{
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 3px 13px 34px -10px rgba(0,0,0,0.57);
+    border-radius: 30px;
 }
-.summary p{
-    width: fit-content;
+.summary-heading{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: -155px;
+}
+.reaction{
+    max-width: 260px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    border-radius: 5px;
-    height: 4vh;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-.summary i{
-    margin-right: 2vh;
-}
-.summary span{
-    margin-left: 25vh;
+    justify-content: space-between;
+    background: rgba(254, 83, 83, 0.1);
+    color: hsl(0, 100%, 67%);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
 }
 .reaction p{
-    background: linear-gradient(90deg,hsla(0, 100%, 67%,.4),hsl(0, 0%, 100%));
-    color: hsl(0, 100%, 67%);
-    font-weight: 500;
-}
-.memeory p{
-    background: linear-gradient(90deg,hsla(39, 100%, 56%,.4),hsl(0, 0%, 100%));
-    color: hsl(39, 100%, 56%);
-    font-weight: 500;
-}
-.verbal p{
-    background: linear-gradient(90deg,hsla(166, 100%, 37%,.4),hsl(0, 0%, 100%));
-    color: hsl(166, 100%, 37%);
-    font-weight: 500;
-}
-.visual p{
-    background: linear-gradient(90deg,hsla(234, 85%, 45%,.4),hsl(0, 0%, 100%));
-    color: hsl(234, 85%, 45%);
-    font-weight: 500;
+    color: black;
+    margin-left: 100px;
+    font-weight: 600;
 }
 .reaction span{
-    color: black;
+    color:hsl(224, 30%, 27%);
 }
-.memeory span{
+
+.memory{
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(239, 245, 39, 0.1);
+    color: hsl(39, 100%, 56%);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.memory p{
     color: black;
+    font-weight: 600;
+    margin-left: 100px;
+}
+.memory span{
+    color:hsl(224, 30%, 27%);
+}
+
+.verbal{
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(68, 253, 68, 0.1);
+    color: hsl(166, 100%, 37%);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.verbal p{
+    color: black;
+    margin-left: 100px;
+    font-weight: 600;
 }
 .verbal span{
+    color:hsl(224, 30%, 27%);
+}
+.visual{
+    max-width: 260px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 255, 0.1);
+    color: hsl(234, 85%, 45%);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.visual p{
     color: black;
-    margin-left: 26.8vh;
+    margin-left: 100px;
+    font-weight: 600;
 }
 .visual span{
-    color: black;
-    margin-left: 26.8vh;
+    color:hsl(224, 30%, 27%);
 }
-.continue{
+.button{
+    max-width: 200px;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
     background: hsl(224, 30%, 27%);
     color: #fff;
-    border-radius:20px;
-    height: 5vh;
-    width: 30vh;
+}
+.button:hover{
+    border: none;
+    outline: none;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+@media (max-width: 520px){
+    .main-box{
+        max-width: 540px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .first-box{
+        max-width: 520px;
+        width: 100%;
+        height: 100%;
+        border-radius:0 0 30px 30px
+    }
+    .paragraph{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .circle{
+        width: 160px;
+        height: 160px;
+    }
+    .circle p{
+        font-size: 3.5rem;
+    }
+    .second-box{
+        max-width: 520px;
+        width: 100%;
+        height: 100%;
+    }
+    .summary-heading{
+        text-align: center;
+        margin: 0;
+        font-weight: 700;
+    }
+    .reaction{
+        max-width: 375px;
+        width: 100%;
+        margin:auto;
+    }
+
+    .memory{
+        max-width: 375px;
+        width: 100%;
+        margin:auto;
+    }
+
+    .verbal{
+        max-width: 375px;
+        width: 100%;
+        margin:auto;
+    }
+
+    .visual{
+        max-width: 375px;
+        width: 100%;
+        margin:auto;
+    }
+    button{
+        margin: auto;
+        margin-bottom: 40px;
+    }
 }
